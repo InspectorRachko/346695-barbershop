@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+
+  <body>
+
+    <header class="main_header">
+
+      <div class="container">
+
+        <nav class="main_navigation">
+          <ul>
+            <li>
+              <a href="#" class="back_to_main"> <img src="#" alt=""></a>
+                 <!-- если я правильно понял, эта ссылка на главную страницу идет с картинкой, а остальные ссылки в хедере идут простым текстом -->
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user_block">
+          <a class="login" href="#">Вход</a>
+        </div>
+
+      </div>
+
+     </header>
+
+
+  <main class="container">
+
+   <section class="breadcrumbs">
+
+    <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+
+      <ul>
+        <li>
+          <a href="#">ГЛАВНАЯ</a>
+        </li>
+        <li>
+          <a href="#">МАГАЗИН</a>
+        </li>
+        <li>
+          <a href="#" class="current_page">СРЕДСТВА ДЛЯ УХОДА</a>
+        </li>
+      </ul>
+
+   </section>
+
+   <section class="filter_section">
+
+    <h2>ПРОИЗВОДИТЕЛИ</h2>
+
+    <form action="#" method="post">
+          <input type="checkbox" name="baxter_of_california_checkbox" id="baxter_of_california_field" class="checkbox baxter_of_california_filter" checked>
+          <label for="baxter_of_california_field">BAXTER OF CALIFORNIA</label>
+          <br>
+          <input type="checkbox" name="mr_natty_checkbox" id="mr_natty_field" class="checkbox mr_natty_filter">
+          <label for="mr_natty_field">MR NATTY</label>
+          <br>
+          <input type="checkbox" name="suavecito_checkbox" id="suavecito_field" class="checkbox suavecito_filter">
+          <label for="suavecito_field">SUAVECITO</label>
+          <br>
+          <input type="checkbox" name="malin+goetz_checkbox" id="malin+goetz_field" class="checkbox malin+goetz_filter">
+          <label for="malin+goetz_field">MALIN+GOETZ</label>
+          <br>
+          <input type="checkbox" name="murrays_checkbox" id="murrays_field" class="checkbox murrays_filter">
+          <label for="murrays_field">MURRAY´S</label>
+          <br>
+          <input type="checkbox" name="american_crew_checkbox" id="american_crew_field" class="checkbox american_crew_filter">
+          <label for="american_crew_field">AMERICAN CREW</label>
+
+          <!--решил сделать фильтры через элементы форм, а не через ссылки. В итоге не уверен, как сделать кнопку "Показать" так, чтобы она применялась к обоим фильтрам.
+          Или это будет не кнопка, а ссылка?
+          Пока временно сделал ссылку-заглушку и вынес ее за пределы форм фильтров, см. ниже -->
+
+      </form>
+
+    <h2>ГРУППЫ ТОВАРОВ</h2>
+
+    <form action="#" method="post">
+           <label>
+                <input type="radio" name="radio_filter" value="shave_tools" class="radio shave_tools_filter" checked>
+                БРИТВЕННЫЕ<br>
+                ПРИНАДЛЕЖНОСТИ
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="radio_filter" value="care_items" class="radio care_items_filter">
+                СРЕДСТВА ДЛЯ УХОДА
+            </label>
+            <br>
+            <label>
+               <input type="radio" name="radio_filter" value="accessorys" class="radio accessorys_filter">
+                АКСЕССУАРЫ
+            </label>
+    </form>
+        <!-- вот эта ссылка -->
+    <a class="btn commit_filter" href="#">Показать</a>
+
+   </section>
+
+   <section class="products_section">
+
+     <div class="product shop_window_1">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Набор для путешествий<br>
+       «BAXTER OF CALIFORNIA»</p>
+       <p>2 900 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <div class="product shop_window_2">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Увлажняющий кондиционер<br>
+         «BAXTER OF CALIFORNIA»</p>
+       <p>750 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <div class="product shop_window_3">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Гель для волос<br>
+         «SUAVECITO»</p>
+       <p>290 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <div class="product shop_window_4">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Глина для укладки волос<br>
+         «AMERICAN CREW»</p>
+       <p>500 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <div class="product shop_window_5">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Гель для волос<br>
+         «AMERICAN CREW»</p>
+       <p>300 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <div class="product shop_window_6">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="">
+       </figure>
+       <p>Набор для бритья<br>
+         «BAXTER OF CALIFORNIA»</p>
+       <p>3900 РУБ.</p>
+       <a class="btn buy_an_item" href="#">Купить</a>
+     </div>
+
+     <a class="btn shop_page_1" href="#">1</a>
+     <a class="btn shop_page_2" href="#">2</a>
+     <a class="btn shop_page_3" href="#">3</a>
+     <a class="btn shop_page_4" href="#">4</a>
+
+   </section>
+
+  </main>
+
+  <footer class="main_footer">
+
+    <div class="container">
+
+      <section class="footer_contacts">
+
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+
+      </section>
+
+      <section class="footer_social">
+
+       <p>Давайте дружить!</p>
+       <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+       <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+       <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+
+      </section>
+
+      <section class="footer_copyright">
+
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+
+      </section>
+
+    </div>
+
+  </footer>
+
+  </body>
+</html>
