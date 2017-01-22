@@ -2,21 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
+    <title>Средства для ухода - Барбершоп «Бородинский»</title>
   </head>
 
   <body>
 
     <header class="main_header">
-
       <div class="container">
+
+        <div class="to_start_page_btn">
+         <a href="#" class="to_start_page_link"> <img src="#" class="mini_logo" width="80" height="30" alt="Barbershop"></a>
+        </div>
 
         <nav class="main_navigation">
           <ul>
-            <li>
-              <a href="#" class="back_to_main"> <img src="#" alt=""></a>
-                 <!-- если я правильно понял, эта ссылка на главную страницу идет с картинкой, а остальные ссылки в хедере идут простым текстом -->
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -38,17 +37,12 @@
         <div class="user_block">
           <a class="login" href="#">Вход</a>
         </div>
-
       </div>
-
      </header>
 
-
   <main class="container">
-
-   <section class="breadcrumbs">
-
     <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+   <section class="breadcrumbs">
 
       <ul>
         <li>
@@ -58,168 +52,155 @@
           <a href="#">МАГАЗИН</a>
         </li>
         <li>
-          <a href="#" class="current_page">СРЕДСТВА ДЛЯ УХОДА</a>
+          <a class="current_page">СРЕДСТВА ДЛЯ УХОДА</a>
         </li>
       </ul>
-
    </section>
-
-   <section class="filter_section">
-
-    <h2>ПРОИЗВОДИТЕЛИ</h2>
+   <section class="filter">
 
     <form action="#" method="post">
-          <input type="checkbox" name="baxter_of_california_checkbox" id="baxter_of_california_field" class="checkbox baxter_of_california_filter" checked>
-          <label for="baxter_of_california_field">BAXTER OF CALIFORNIA</label>
-          <br>
-          <input type="checkbox" name="mr_natty_checkbox" id="mr_natty_field" class="checkbox mr_natty_filter">
-          <label for="mr_natty_field">MR NATTY</label>
-          <br>
-          <input type="checkbox" name="suavecito_checkbox" id="suavecito_field" class="checkbox suavecito_filter">
-          <label for="suavecito_field">SUAVECITO</label>
-          <br>
-          <input type="checkbox" name="malin+goetz_checkbox" id="malin+goetz_field" class="checkbox malin+goetz_filter">
-          <label for="malin+goetz_field">MALIN+GOETZ</label>
-          <br>
-          <input type="checkbox" name="murrays_checkbox" id="murrays_field" class="checkbox murrays_filter">
-          <label for="murrays_field">MURRAY´S</label>
-          <br>
-          <input type="checkbox" name="american_crew_checkbox" id="american_crew_field" class="checkbox american_crew_filter">
-          <label for="american_crew_field">AMERICAN CREW</label>
+      <h2>ПРОИЗВОДИТЕЛИ</h2>
+          <input type="checkbox" name="mfr_filter" id="baxter" value="baxter" class="checkbox" checked>
+          <label for="baxter">BAXTER OF CALIFORNIA</label>
 
-          <!--решил сделать фильтры через элементы форм, а не через ссылки. В итоге не уверен, как сделать кнопку "Показать" так, чтобы она применялась к обоим фильтрам.
-          Или это будет не кнопка, а ссылка?
-          Пока временно сделал ссылку-заглушку и вынес ее за пределы форм фильтров, см. ниже -->
+          <input type="checkbox" name="mfr_filter" id="mr_natty" value="mr_natty" class="checkbox">
+          <label for="mr_natty">MR NATTY</label>
 
-      </form>
+          <input type="checkbox" name="mfr_filter" id="suavecito" value="suavecito" class="checkbox">
+          <label for="suavecito">SUAVECITO</label>
+
+          <input type="checkbox" name="mfr_filter" id="malin_goetz" value="malin_goetz" class="checkbox">
+          <label for="malin_goetz">MALIN_GOETZ</label>
+
+          <input type="checkbox" name="mfr_filter" id="murrays" value="murrays" class="checkbox">
+          <label for="murrays">MURRAY´S</label>
+
+          <input type="checkbox" name="mfr_filter" id="american" value="american" class="checkbox">
+          <label for="american">AMERICAN CREW</label>
 
     <h2>ГРУППЫ ТОВАРОВ</h2>
-
-    <form action="#" method="post">
            <label>
-                <input type="radio" name="radio_filter" value="shave_tools" class="radio shave_tools_filter" checked>
+                <input type="radio" name="type_filter" value="shave_tools" class="radio" checked>
                 БРИТВЕННЫЕ<br>
                 ПРИНАДЛЕЖНОСТИ
             </label>
-            <br>
+
             <label>
-                <input type="radio" name="radio_filter" value="care_items" class="radio care_items_filter">
+                <input type="radio" name="type_filter" value="care_items" class="radio">
                 СРЕДСТВА ДЛЯ УХОДА
             </label>
-            <br>
+
             <label>
-               <input type="radio" name="radio_filter" value="accessorys" class="radio accessorys_filter">
+               <input type="radio" name="type_filter" value="accessorys" class="radio">
                 АКСЕССУАРЫ
             </label>
+
+    <input type="submit" class="btn commit_filter_btn" value="Показать">
     </form>
-        <!-- вот эта ссылка -->
-    <a class="btn commit_filter" href="#">Показать</a>
-
    </section>
+   <section class="showcase">
 
-   <section class="products_section">
-
-     <div class="product shop_window_1">
+     <div class="shop_window">
        <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
+         <img src="#" width="300" height="150" alt="Набор для путешествий<br>
+         «BAXTER OF CALIFORNIA»">
        </figure>
-       <p>Набор для путешествий<br>
-       «BAXTER OF CALIFORNIA»</p>
-       <p>2 900 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
+       <div>Набор для путешествий<br>
+       «BAXTER OF CALIFORNIA»</div>
+       <div class="price_n_buy">2900 РУБ.
+        <a class="btn buy_btn" href="#">Купить</a>
+       </div>
      </div>
 
-     <div class="product shop_window_2">
+     <div class="shop_window">
        <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
+         <img src="#" width="300" height="150" alt="Увлажняющий кондиционер
+           «BAXTER OF CALIFORNIA»">
        </figure>
-       <p>Увлажняющий кондиционер<br>
-         «BAXTER OF CALIFORNIA»</p>
-       <p>750 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
+       <div>Увлажняющий кондиционер<br>
+         «BAXTER OF CALIFORNIA»</div>
+        <div class="price_n_buy">750 РУБ.
+         <a class="btn buy_btn" href="#">Купить</a>
+        </div>
      </div>
 
-     <div class="product shop_window_3">
+     <div class="shop_window">
        <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
+         <img src="#" width="300" height="150" alt="Гель для волос
+           «SUAVECITO»">
        </figure>
-       <p>Гель для волос<br>
-         «SUAVECITO»</p>
-       <p>290 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
+       <div>Гель для волос<br>
+         «SUAVECITO»</div>
+         <div class="price_n_buy">290 РУБ.
+          <a class="btn buy_btn" href="#">Купить</a>
+      </div>
+
+     <div class="shop_window">
+       <figure class="product_picture">
+         <img src="#" width="300" height="150" alt="Глина для укладки волос
+           «AMERICAN CREW»">
+       </figure>
+       <div>Глина для укладки волос<br>
+         «AMERICAN CREW»</div>
+         <div class="price_n_buy">500 РУБ.
+          <a class="btn buy_btn" href="#">Купить</a>
+         </div>
      </div>
 
-     <div class="product shop_window_4">
+     <div class="shop_window">
        <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
+         <img src="#" width="300" height="150" alt="Гель для волос
+           «AMERICAN CREW»">
        </figure>
-       <p>Глина для укладки волос<br>
-         «AMERICAN CREW»</p>
-       <p>500 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
+       <div>Гель для волос<br>
+         «AMERICAN CREW»</div>
+         <div class="price_n_buy">300 РУБ.
+          <a class="btn buy_btn" href="#">Купить</a>
+         </div>
      </div>
 
-     <div class="product shop_window_5">
+     <div class="shop_window">
        <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
+         <img src="#" width="300" height="150" alt="Набор для бритья
+           «BAXTER OF CALIFORNIA»">
        </figure>
-       <p>Гель для волос<br>
-         «AMERICAN CREW»</p>
-       <p>300 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
+       <div>Набор для бритья<br>
+         «BAXTER OF CALIFORNIA»</div>
+         <div class="price_n_buy">3900 РУБ.
+          <a class="btn buy_btn" href="#">Купить</a>
+         </div>
      </div>
 
-     <div class="product shop_window_6">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="">
-       </figure>
-       <p>Набор для бритья<br>
-         «BAXTER OF CALIFORNIA»</p>
-       <p>3900 РУБ.</p>
-       <a class="btn buy_an_item" href="#">Купить</a>
-     </div>
-
-     <a class="btn shop_page_1" href="#">1</a>
-     <a class="btn shop_page_2" href="#">2</a>
-     <a class="btn shop_page_3" href="#">3</a>
-     <a class="btn shop_page_4" href="#">4</a>
-
+     <a class="btn shop_page_btn" href="#">1</a>
+     <a class="btn shop_page_btn">2</a>
+     <a class="btn shop_page_btn"  href="#">3</a>
+     <a class="btn shop_page_btn"  href="#">4</a>
    </section>
-
   </main>
 
   <footer class="main_footer">
-
     <div class="container">
 
-      <section class="footer_contacts">
-
+      <div class="footer_contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
+      </div>
 
-      </section>
-
-      <section class="footer_social">
-
-       <p>Давайте дружить!</p>
+      <div class="footer_social">
+       <div>Давайте дружить!</div>
        <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
        <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
        <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+      </div>
 
-      </section>
-
-      <section class="footer_copyright">
-
+      <div class="footer_copyright">
         <p>Разработано:</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-
-      </section>
+      </div>
 
     </div>
-
   </footer>
-
   </body>
 </html>
