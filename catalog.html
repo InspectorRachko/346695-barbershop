@@ -41,140 +41,135 @@
      </header>
 
   <main class="container">
-    <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+    <h1>Средства для ухода</h1>
    <section class="breadcrumbs">
 
       <ul>
         <li>
-          <a href="#">ГЛАВНАЯ</a>
+          <a href="#" class="breadcrumbs_special">главная</a>
         </li>
         <li>
-          <a href="#">МАГАЗИН</a>
+          <a href="#">магазин</a>
         </li>
         <li>
-          <a class="current_page">СРЕДСТВА ДЛЯ УХОДА</a>
+          <a class="current_page">средства для ухода</a>
         </li>
       </ul>
    </section>
    <section class="filter">
 
     <form action="#" method="post">
-      <h2>ПРОИЗВОДИТЕЛИ</h2>
+     <h2>производители</h2>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="baxter" value="baxter" class="checkbox" checked>
-          <label for="baxter">BAXTER OF CALIFORNIA</label>
-
+          <label for="baxter">baxter of california</label>
+      </div>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="mr_natty" value="mr_natty" class="checkbox">
-          <label for="mr_natty">MR NATTY</label>
-
+          <label for="mr_natty">mr natty</label>
+      </div>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="suavecito" value="suavecito" class="checkbox">
-          <label for="suavecito">SUAVECITO</label>
-
+          <label for="suavecito">suavecito</label>
+      </div>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="malin_goetz" value="malin_goetz" class="checkbox">
-          <label for="malin_goetz">MALIN_GOETZ</label>
-
+          <label for="malin_goetz">malin+goetz</label>
+      </div>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="murrays" value="murrays" class="checkbox">
-          <label for="murrays">MURRAY´S</label>
-
+          <label for="murrays">murray´s</label>
+      </div>
+      <div class="checkbox_cell">
           <input type="checkbox" name="mfr_filter" id="american" value="american" class="checkbox">
-          <label for="american">AMERICAN CREW</label>
+          <label for="american">american crew</label>
+      </div>
+    <h2>группы товаров</h2>
+      <div class="radio_cell">
+          <input type="radio" name="type_filter" id="shave_tools" value="shave_tools" class="radio" checked>
+          <label for="shave_tools">бритвенные<br>принадлежности</label>
+      </div>
+      <div class="radio_cell">
+          <input type="radio" name="type_filter" id="care_items" value="care_items" class="radio">
+          <label for="care_items">средства для ухода</label>
+      </div>
+      <div class="radio_cell">
+          <input type="radio" name="type_filter" id="accessorys" value="accessorys" class="radio">
+          <label for="accessorys">аксессуары</label>
+      </div>
 
-    <h2>ГРУППЫ ТОВАРОВ</h2>
-           <label>
-                <input type="radio" name="type_filter" value="shave_tools" class="radio" checked>
-                БРИТВЕННЫЕ<br>
-                ПРИНАДЛЕЖНОСТИ
-            </label>
+      <button type="submit" class="btn commit_filter_btn">Показать</button>
 
-            <label>
-                <input type="radio" name="type_filter" value="care_items" class="radio">
-                СРЕДСТВА ДЛЯ УХОДА
-            </label>
-
-            <label>
-               <input type="radio" name="type_filter" value="accessorys" class="radio">
-                АКСЕССУАРЫ
-            </label>
-
-    <input type="submit" class="btn commit_filter_btn" value="Показать">
     </form>
    </section>
    <section class="showcase">
 
      <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Набор для путешествий<br>
-         «BAXTER OF CALIFORNIA»">
-       </figure>
-       <div>Набор для путешествий<br>
-       «BAXTER OF CALIFORNIA»</div>
-       <div class="price_n_buy">2900 РУБ.
-        <a class="btn buy_btn" href="#">Купить</a>
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+         <p>Набор для путешествий<br>
+         «baxter of california»</p>
+       <div class="price_n_buy">
+         <span>2900 РУБ.</span>
+         <a class="btn buy_btn" href="#">Купить</a>
        </div>
      </div>
 
      <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Увлажняющий кондиционер
-           «BAXTER OF CALIFORNIA»">
-       </figure>
-       <div>Увлажняющий кондиционер<br>
-         «BAXTER OF CALIFORNIA»</div>
-        <div class="price_n_buy">750 РУБ.
-         <a class="btn buy_btn" href="#">Купить</a>
-        </div>
-     </div>
-
-     <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Гель для волос
-           «SUAVECITO»">
-       </figure>
-       <div>Гель для волос<br>
-         «SUAVECITO»</div>
-         <div class="price_n_buy">290 РУБ.
-          <a class="btn buy_btn" href="#">Купить</a>
-      </div>
-
-     <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Глина для укладки волос
-           «AMERICAN CREW»">
-       </figure>
-       <div>Глина для укладки волос<br>
-         «AMERICAN CREW»</div>
-         <div class="price_n_buy">500 РУБ.
-          <a class="btn buy_btn" href="#">Купить</a>
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+         <p>Увлажняющий кондиционер<br>
+         «baxter of california»</p>
+         <div class="price_n_buy">
+           <span>750 РУБ.</span>
+           <a class="btn buy_btn" href="#">Купить</a>
          </div>
      </div>
 
      <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Гель для волос
-           «AMERICAN CREW»">
-       </figure>
-       <div>Гель для волос<br>
-         «AMERICAN CREW»</div>
-         <div class="price_n_buy">300 РУБ.
-          <a class="btn buy_btn" href="#">Купить</a>
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+         <p>Гель для волос<br>
+         «suavecito»</p>
+         <div class="price_n_buy">
+           <span>290 РУБ.</span>
+           <a class="btn buy_btn" href="#">Купить</a>
          </div>
-     </div>
+    </div>
 
      <div class="shop_window">
-       <figure class="product_picture">
-         <img src="#" width="300" height="150" alt="Набор для бритья
-           «BAXTER OF CALIFORNIA»">
-       </figure>
-       <div>Набор для бритья<br>
-         «BAXTER OF CALIFORNIA»</div>
-         <div class="price_n_buy">3900 РУБ.
-          <a class="btn buy_btn" href="#">Купить</a>
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+         <p>Глина для укладки волос<br>
+         «american crew»</p>
+         <div class="price_n_buy">
+           <span>500 РУБ.</span>
+           <a class="btn buy_btn" href="#">Купить</a>
          </div>
-     </div>
+    </div>
 
+    <div class="shop_window">
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+       <p>Гель для волос<br>
+         «american crew»</p>
+         <div class="price_n_buy">
+           <span>300 РУБ.</span>
+           <a class="btn buy_btn" href="#">Купить</a>
+         </div>
+    </div>
+
+    <div class="shop_window">
+         <img class="product_picture" src="#" width="300" height="150" alt="Фото товара">
+       <p>Набор для бритья<br>
+         «baxter of california»</p>
+         <div class="price_n_buy">
+           <span>3900 РУБ.</span>
+           <a class="btn buy_btn" href="#">Купить</a>
+         </div>
+    </div>
+
+    <div class="pagination">
      <a class="btn shop_page_btn" href="#">1</a>
      <a class="btn shop_page_btn">2</a>
      <a class="btn shop_page_btn"  href="#">3</a>
      <a class="btn shop_page_btn"  href="#">4</a>
+    </div>
    </section>
   </main>
 
