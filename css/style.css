@@ -17,3 +17,301 @@ h2 {
     font-weight: bold;
     line-height: 30px;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.to_start_page_btn {
+  float: left;
+  min-height: 70px;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.main_navigation {
+  float: left;
+  min-height: 70px;
+  width: 640px;
+}
+
+.user_block {
+  float: right;
+  min-height: 70px;
+  width: 140px;
+}
+
+.breadcrumbs {
+  min-height: 17px;
+  margin-bottom: 60px;
+}
+
+.main_footer {
+  margin-top: 49px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer_contacts {
+  float: left;
+  width: 320px;
+  min-height: 90px;
+  margin-right: 60px;
+}
+
+.footer_social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer_copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+/*======================================
+ Правила для страницы catalog.html
+ =======================================*/
+
+.filter {
+  float:left;
+  height: 574px;
+  width: 220px;
+  margin-bottom: 160px;
+  margin-right: 20px;
+}
+
+.shop_window  {
+  float:left;
+  height: 595px;
+  width: 700px;
+}
+
+.product {
+  float:left;
+  height: 286px;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product:nth-child(3), .product:nth-child(6) {
+  margin-right: 0px;
+}
+
+.pagination {
+  float:left;
+  height: 43px;
+  width: 193px;
+  margin-top: 45px;
+}
+
+/*======================================
+ Правила для страницы catalog-item.html
+ =======================================*/
+
+ .big_picture {
+   margin-bottom: 20px;
+ }
+
+ .thumbnail {
+   float: left;
+   margin-right: 20px;
+ }
+
+ .thumbnail:nth-child(3) {
+   float: right;
+   margin-right: 0px;
+   /* Почему-то это правило отказывается работать: у третьей миниатюры всё равно сохраняется отступ справа в 20 пикселей.... */
+ }
+
+ .gallery {
+   float:left;
+   height: 668px;
+   /* .... и из-за этого приходится делать ширину родительского элемента на 20 больше: 480 вместо 460. Иначе последняя картинка просто сваливается вниз. */
+   width: 480px;
+   margin-bottom: 20px;
+ }
+
+ .product_info {
+   float:right;
+   height: 516px;
+   width: 390px;
+ }
+
+ .availability {
+   float:left;
+   margin-bottom: 20px;
+ }
+
+ .product_description {
+   float:left;
+   margin-bottom: 20px;
+ }
+
+ .description_price_n_buy {
+   float:left;
+   margin-bottom: 45px;
+   width: inherit;
+ }
+
+ .product_features {
+   float:left;
+ }
+
+ .article {
+   float:right;
+ }
+
+/*=======================
+ Временное подсвечивание
+=========================*/
+
+body {
+ padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+ position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+ display: none;
+}
+
+body > *::before {
+ top: -3px;
+ left: -3px;
+}
+
+body > * > *::before {
+ top: -3px;
+ left: -3px;
+}
+
+body > * > * > *::before {
+ top: 0;
+ left: 0;
+}
+
+body > * {
+ background: rgba(0, 128, 0, 0.2);
+ box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+ color: white;
+
+ background: green;
+}
+
+body > * > * {
+ background: rgba(255, 45, 82, 0.2);
+ box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+ color: white;
+
+ background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+ background: rgba(234, 255, 45, 0.2);
+ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+ color: black;
+
+ background: rgb(234, 255, 45);
+}
+
+.main_header::before {
+ content: ".main-header";
+}
+
+.container::before {
+ content: ".container";
+}
+
+.main_header .container::before {
+ top: auto;
+ bottom: -28px;
+}
+
+.main_navigation::before {
+ content: ".main-navigation";
+}
+
+.user_block::before {
+ content: ".user-block";
+}
+
+.index_logo::before {
+ content: ".index-logo";
+}
+
+.features::before {
+ content: ".features";
+ top: -28px;
+}
+
+.features_item::before {
+ content: ".features-item";
+}
+
+.index_content::before {
+ content: ".index-content";
+}
+
+.index_content_left::before {
+ content: ".index-content-left";
+ left: auto;
+ right: 0;
+}
+
+.index_content_right::before {
+ content: ".index-content-right";
+ left: auto;
+ right: 0;
+}
+
+.main_footer::before {
+ content: ".main-footer";
+}
+
+.main_footer .container::before {
+ top: -28px;
+}
+
+.footer_contacts::before {
+ content: ".footer-contacts";
+}
+
+.footer_social::before {
+ content: ".footer-social";
+}
+
+.footer_copyright::before {
+ content: ".footer-copyright";
+}
