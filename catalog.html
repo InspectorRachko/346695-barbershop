@@ -16,7 +16,7 @@
         </div>
 
         <nav class="main_navigation">
-          <ul>
+          <ul class="row">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -42,7 +42,7 @@
      </header>
 
   <main class="container clearfix">
-   <h1>Средства для ухода</h1>
+   <h1 class="main_title">Средства для ухода</h1>
 
    <div class="breadcrumbs">
       <ul>
@@ -62,43 +62,47 @@
 
     <form action="#" method="post">
      <h2>Производители</h2>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="baxter" value="baxter" class="checkbox" checked>
-          <label for="baxter">baxter of california</label>
-      </div>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="mr_natty" value="mr_natty" class="checkbox">
-          <label for="mr_natty">mr natty</label>
-      </div>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="suavecito" value="suavecito" class="checkbox">
-          <label for="suavecito">suavecito</label>
-      </div>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="malin_goetz" value="malin_goetz" class="checkbox">
-          <label for="malin_goetz">malin+goetz</label>
-      </div>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="murrays" value="murrays" class="checkbox">
-          <label for="murrays">murray´s</label>
-      </div>
-      <div class="checkbox_cell">
-          <input type="checkbox" name="mfr_filter" id="american" value="american" class="checkbox">
-          <label for="american">american crew</label>
-      </div>
+       <div class="checkbox_filter">
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="baxter" value="baxter" class="checkbox" checked>
+            <label for="baxter">baxter of california</label>
+        </div>
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="mr_natty" value="mr_natty" class="checkbox">
+            <label for="mr_natty">mr natty</label>
+        </div>
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="suavecito" value="suavecito" class="checkbox">
+            <label for="suavecito">suavecito</label>
+        </div>
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="malin_goetz" value="malin_goetz" class="checkbox">
+            <label for="malin_goetz">malin+goetz</label>
+        </div>
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="murrays" value="murrays" class="checkbox">
+            <label for="murrays">murray´s</label>
+        </div>
+        <div class="checkbox_cell">
+            <input type="checkbox" name="mfr_filter" id="american" value="american" class="checkbox">
+            <label for="american">american crew</label>
+        </div>
+       </div>
     <h2>Группы товаров</h2>
-      <div class="radio_cell">
-          <input type="radio" name="type_filter" id="shave_tools" value="shave_tools" class="radio" checked>
-          <label for="shave_tools">Бритвенные<br>принадлежности</label>
-      </div>
-      <div class="radio_cell">
-          <input type="radio" name="type_filter" id="care_items" value="care_items" class="radio">
-          <label for="care_items">Средства для ухода</label>
-      </div>
-      <div class="radio_cell">
-          <input type="radio" name="type_filter" id="accessories" value="accessories" class="radio">
-          <label for="accessories">Аксессуары</label>
-      </div>
+       <div class="radio_filter">
+        <div class="radio_cell">
+            <input type="radio" name="type_filter" id="shave_tools" value="shave_tools" class="radio" checked>
+            <label for="shave_tools">Бритвенные<br>принадлежности</label>
+        </div>
+        <div class="radio_cell">
+            <input type="radio" name="type_filter" id="care_items" value="care_items" class="radio">
+            <label for="care_items">Средства для ухода</label>
+        </div>
+        <div class="radio_cell">
+            <input type="radio" name="type_filter" id="accessories" value="accessories" class="radio">
+            <label for="accessories">Аксессуары</label>
+        </div>
+       </div>
 
       <button type="submit" class="btn commit_filter_btn">Показать</button>
 
@@ -108,8 +112,8 @@
 
      <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/baxter_set_1_small.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Набор для путешествий<br>
-         <span>«baxter of california»</span></p>
+         <span>Набор для путешествий<br>
+         <span class="capitalise">«baxter of california»</span></span>
        <div class="price_n_buy">
          <span>2900 РУБ.</span>
          <a class="btn buy_btn" href="#">Купить</a>
@@ -118,8 +122,8 @@
 
      <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/baxter_conditioner.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Увлажняющий кондиционер<br>
-         <span>«baxter of california»</span></p>
+         <span>Увлажняющий кондиционер<br>
+         <span class="capitalise">«baxter of california»</span></span>
          <div class="price_n_buy">
            <span>750 РУБ.</span>
            <a class="btn buy_btn" href="#">Купить</a>
@@ -128,8 +132,8 @@
 
      <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/suavecito_gel.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Гель для волос<br>
-         <span>«suavecito»</span></p>
+         <span>Гель для волос<br>
+         <span class="capitalise">«suavecito»</span></span>
          <div class="price_n_buy">
            <span>290 РУБ.</span>
            <a class="btn buy_btn" href="#">Купить</a>
@@ -138,8 +142,8 @@
 
      <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/american_clay.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Глина для укладки волос<br>
-        <span/>«american crew»<span/></p>
+         <span>Глина для укладки волос<br>
+        <span class="capitalise">«american crew»<span/></span>
          <div class="price_n_buy">
            <span>500 РУБ.</span>
            <a class="btn buy_btn" href="#">Купить</a>
@@ -148,8 +152,8 @@
 
     <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/american_gel.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Гель для волос<br>
-         <span>«american crew»<span/></p>
+         <span>Гель для волос<br>
+         <span class="capitalise">«american crew»<span/></span>
          <div class="price_n_buy">
            <span>300 РУБ.</span>
            <a class="btn buy_btn" href="#">Купить</a>
@@ -158,8 +162,8 @@
 
     <div class="product">
          <a href="#" class="to_product_link"><img class="product_picture" src="img/baxter_set_2.jpg" width="220" height="165" alt="Фото товара"></a>
-         <p>Набор для бритья<br>
-         <span>«baxter of california»</span></p>
+         <span>Набор для бритья<br>
+         <span class="capitalise">«baxter of california»</span></span>
          <div class="price_n_buy">
            <span>3900 РУБ.</span>
            <a class="btn buy_btn" href="#">Купить</a>
@@ -186,15 +190,15 @@
       </div>
 
       <div class="footer_social">
-       <p>Давайте дружить!</p>
+       <span>Давайте дружить!</span><br>
        <a class="social_btn social_btn_vk" href="#"> <img src="img/vk.png" width="25" height="16" alt="VK"></a>
        <a class="social_btn social_btn_fb" href="#"> <img src="img/facebook.png" width="12" height="22" alt="FB"></a>
        <a class="social_btn social_btn_inst" href="#"> <img src="img/instagram.png" width="21" height="21" alt="Instg"></a>
       </div>
 
       <div class="footer_copyright">
-        <p>Разработано:</p>
-        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        <span>Разработано:</span><br>
+        <a class="btn copyright_btn" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </div>
   </footer>
